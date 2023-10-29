@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         for (i in 1..24) {
             itemList.add(
                 ItemModel(
-                    ('a' + i - 1).toString() + "@gmail.com",
-                    "Example title Example titleExample titleExample titleExample title",
-                    "Example description Example description Example description Example description",
+                    ("user$i").toString() + "@gmail.com",
+                    "User $i",
+                    "I'm user number $i",
                     if (i <= 12) "$i:00 AM" else "${i-12}:00 PM"
                 )
             )

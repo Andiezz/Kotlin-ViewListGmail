@@ -24,7 +24,8 @@ class MyCustomAdapter(val items: ArrayList<ItemModel>):BaseAdapter() {
         var viewHolder: MyViewHolder
         var itemView: View
         if (p1 == null) {
-            itemView = LayoutInflater.from(p2?.context)
+            itemView = LayoutInflater
+                .from(p2?.context)
                 .inflate(R.layout.custom_item, p2, false)
             viewHolder = MyViewHolder()
             viewHolder.itemTitle = itemView.findViewById(R.id.item_title)
